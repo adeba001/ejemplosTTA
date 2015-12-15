@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.adeba001.ejemplotta_1.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="PAGINA DE ACCESO"
+        android:textSize="20dp"
+        />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/usuario" />
+    <EditText android:id="@+id/loginNombre"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:hint="Introduce DNI"/>
+
+    <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pswd" />
+    <EditText android:id="@+id/pswd"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:hint="tu DNI"/>
+
+    </GridLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACCEDER"
+        android:onClick="login"/>
+
+
+</LinearLayout>
