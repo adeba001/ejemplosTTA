@@ -4,46 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.adeba001.ejemplotta_1.MainActivity"
-    tools:showIn="@layout/activity_main"
-    android:orientation="vertical">
+    tools:context="es.tta.ejemploclase.MainActivity"
+    tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:text="PAGINA DE ACCESO"
-        android:textSize="20dp"
-        />
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:columnCount="2">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/usuario" />
-    <EditText android:id="@+id/loginNombre"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:hint="Introduce DNI"/>
 
-    <TextView android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/pswd" />
-    <EditText android:id="@+id/pswd"
+            android:text="Login De Usuario"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/menu_login_color"
+            android:id="@+id/textView" />
+
+        <GridLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:hint="tu DNI"/>
+            android:columnCount="2">
 
-    </GridLayout>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ACCEDER"
-        android:onClick="login"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_usuario" />
 
+            <EditText
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/menu_usuario_contenido" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_password" />
+
+            <EditText
+                android:id="@+id/passwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/menu_password_contenido"
+                android:inputType="textPassword" />
+
+        </GridLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_boton_acceder"
+            android:onClick="login"/>
 
 </LinearLayout>
+
+
+

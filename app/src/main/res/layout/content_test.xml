@@ -4,33 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:orientation="vertical"
-    tools:context="com.example.adeba001.ejemplotta_1.TestActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="es.tta.ejemploclase.TestActivity"
     tools:showIn="@layout/activity_test">
 
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/textView4"
-        android:layout_gravity="center_horizontal" />
 
-    <RadioGroup
-        android:id="@+id/test_choices"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
 
-    </RadioGroup>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/test_wording" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:visibility="invisible"
-        android:layout_height="wrap_content"
-        android:text="Enviar"
-        android:id="@+id/button_login"
-        android:layout_gravity="center_horizontal"
-        android:onClick="login"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/test_radioGroup">
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_button_send"
+            android:visibility="invisible"
+            android:onClick="send"
+            android:id="@+id/test_button_send" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ayuda"
+            android:visibility="invisible"
+            android:onClick="ayuda"
+            android:id="@+id/test_button_ayuda" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/advice_layout">
+
+        </LinearLayout>
+
 
 </LinearLayout>

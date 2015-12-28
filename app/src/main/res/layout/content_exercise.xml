@@ -1,47 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    android:orientation="vertical"
-    tools:context="com.example.adeba001.ejemplotta_1.ExerciseActivity"
+    tools:context="es.tta.ejemploclase.ExerciseActivity"
     tools:showIn="@layout/activity_exercise">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/title_exercise_lay" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise_encabezado"
+            android:gravity="center"
+            android:textColorHighlight="@color/exercise_color_encabezado"
+            android:textSize="20dp"
+            android:id="@+id/textView4" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ejercicio_fichero"
-        android:id="@+id/button_send_file"
-        android:onClick="sendFile" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise_fichero"
+            android:onClick="subirFichero"
+            android:id="@+id/exercise_button2" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ejercicio_foto"
-        android:id="@+id/button_take_photo"
-        android:onClick="sendPhoto"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise_foto"
+            android:onClick="sacarFoto"
+            android:id="@+id/exercise_button3" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ejercicio_audio"
-        android:id="@+id/button_record_audio"
-        android:onClick="sendAudio" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise_audio"
+            android:onClick="recordAudio"
+            android:id="@+id/exercise_button4" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ejercicio_video"
-        android:id="@+id/button_record_video"
-        android:onClick="sendVideo" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/exercise_video"
+            android:onClick="recordVideo"
+            android:id="@+id/exercise_button5" />
 
 </LinearLayout>

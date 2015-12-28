@@ -6,43 +6,45 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.adeba001.ejemplotta_1.MenuActivity"
+    tools:context="es.tta.ejemploclase.MenuActivity"
     tools:showIn="@layout/activity_menu">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/menu_bienvenido"
-        android:gravity="center"
-        android:textSize="20dp"
-        android:id="@+id/textView2" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:gravity="center"
+            android:id="@+id/menu_login" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/menu_leccion"
-        android:id="@+id/textView3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_leccion"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:onClick=""
+            android:id="@+id/textView3" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/menu_btn_test"
-        android:id="@+id/button2" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_test"
+            android:id="@+id/menu_button"
+            android:onClick="test"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/menu_btn_ejercicio"
-        android:id="@+id/button3" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_ejercicio"
+            android:id="@+id/menu_button2"
+            android:onClick="ejercicio"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:text="@string/menu_btn_seguimiento"
-        android:id="@+id/button4" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_seguimiento"
+            android:id="@+id/menu_button3"
+            android:onClick="seguimiento"/>
 
 </LinearLayout>
