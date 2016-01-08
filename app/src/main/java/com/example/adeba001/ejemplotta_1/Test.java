@@ -31,8 +31,9 @@ public class Test {
 
     protected Advice getAdvice()
     {
+
         //Aqui se creara el objeto advice a partir de los datos que hayan llegado del servidor
-        Advice advice= new Advice("http://www.movilzona.es/", Advice.HTML);
+        Advice advice= new Advice("http://u017633.ehu.eus:18080/static/AndroidManifest.mp4", Advice.VIDEO);
         //Advice advice= new Advice("El manifiesto de la aplicacion describe las diversas partes de que se compone la misma: actividades, servicios, broadcast receviers, y content provider de los que esta compuesta la aplicacion.......",Advice.HTML);
         return advice;
     }
