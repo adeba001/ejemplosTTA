@@ -24,4 +24,5 @@
     <string name="no_camera">No posee camara para realizar la accion selecionada</string>
     <string name="no_app">No se dispone de aplicacion de camara</string>
     <string name="no_micro">No se dispone de aplicacion microfono</string>
+    <string name="title_activity_model">ModelActivity</string>
 </resources>

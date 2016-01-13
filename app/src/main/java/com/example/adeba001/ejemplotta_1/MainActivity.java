@@ -9,11 +9,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
+import com.example.adeba001.ejemplotta_1.presentation.Preferences;
+import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
-    public final static String EXTRA_LOGIN="es.tta.ejemplo_tta.login";
-    public final static String EXTRA_PASSWD="es.tta.ejemplo_tta.passwd";
-    public final static String EXTRA_PREFF="es.tta.ejemplo_tta.preff";
+public class MainActivity extends ModelActivity {
+
 
 
     @Override
@@ -22,19 +22,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        loadlogin();
+        ArrayList<String> log=new ArrayList<>();
+        log=preff.loadlogin();
+        EditText editLogin=(EditText)findViewById(R.id.login);
     }
 
     public void login (View view){
 
         EditText editLogin=(EditText)findViewById(R.id.login);
         EditText editPasswd=(EditText)findViewById(R.id.passwd);
-        String log=editLogin.getText().toString();
-        savelogin(log);
+        ArrayList<String> log=new ArrayList<>();
+        log.add(0,editLogin.getText().toString());
+        log.add(1,editLogin.getText().toString());
+        preff.savelogin(log);
         Intent intent=new Intent (this, MenuActivity.class);
-
-        intent.putExtra(EXTRA_LOGIN,log);
-        intent.putExtra(EXTRA_PASSWD, editPasswd.getText().toString());
         startActivity(intent);
 
     }
@@ -59,17 +60,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-    public void loadlogin()
-    {
-        SharedPreferences preff= getPreferences(MODE_PRIVATE);
-        EditText editLogin=(EditText)findViewById(R.id.login);
-        editLogin.setText(preff.getString(EXTRA_PREFF,null));
-    }
-    public void savelogin(String log)
-    {
-        SharedPreferences preff= getPreferences(MODE_PRIVATE);
-        SharedPreferences.Editor editor=preff.edit();
-        editor.putString(EXTRA_PREFF,log);
-        editor.commit();
-    }
+
 }

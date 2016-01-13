@@ -1,4 +1,4 @@
-package com.example.adeba001.ejemplotta_1;
+package com.example.adeba001.ejemplotta_1.modelo;
 
 /**
  * Created by Miren on 17/12/2015.
@@ -7,7 +7,7 @@ public class Test {
 
 
 
-    protected String getWording(){
+    public String getWording(){
 
        String preguntaTest="¿Cual de las siguientes opciones NO se indica en el fichero de manifiesto de la app?";
 
@@ -29,7 +29,7 @@ public class Test {
     }
 
 
-    protected Advice getAdvice()
+    public Advice getAdvice()
     {
 
         //Aqui se creara el objeto advice a partir de los datos que hayan llegado del servidor

@@ -18,6 +18,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
 
+
+import com.example.adeba001.ejemplotta_1.modelo.Test;
+import com.example.adeba001.ejemplotta_1.presentation.Data;
+
 public class TestActivity extends AppCompatActivity implements View.OnClickListener {
 
     private int correct=0;

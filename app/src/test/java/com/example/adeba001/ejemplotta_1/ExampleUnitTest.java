@@ -1,5 +1,7 @@
 package com.example.adeba001.ejemplotta_1;
 
+import com.example.adeba001.ejemplotta_1.modelo.Test;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
