@@ -1,4 +1,4 @@
-package com.example.adeba001.ejemplotta_1.modelo;
+package com.example.adeba001.ejemplotta_1.NetInfoConnection;
 
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;

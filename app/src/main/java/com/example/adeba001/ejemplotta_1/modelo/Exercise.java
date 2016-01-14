@@ -20,6 +20,6 @@ public class Exercise
     }
 
     public void setExercise(String string) {
-        
+
     }
 }

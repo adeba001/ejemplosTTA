@@ -55,8 +55,10 @@ public class Data {
     public Exercise getExercise()
     {
         Exercise exercise=new Exercise();
-        exercise.setID(bundle.getInt(EXTRA_EXERCISE_ID);
-        exercise.setExercise(bundle.getString(EXTRA_EXERCISE_WORDING));)
+        exercise.setID(bundle.getInt(EXTRA_EXERCISE_ID));
+        exercise.setExercise(bundle.getString(EXTRA_EXERCISE_WORDING));
+        return exercise;
+
 
     }
 

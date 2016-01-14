@@ -17,8 +17,8 @@ public class MenuActivity extends ModelActivity {
 
         Intent intent =getIntent();
         TextView textLogin=(TextView)findViewById(R.id.menu_login);
-        String login=intent.getStringExtra(MainActivity.EXTRA_LOGIN);
-        textLogin.setText(("Bienvenido "+login));
+        //String login=intent.getStringExtra(MainActivity.EXTRA_LOGIN);
+        //textLogin.setText(("Bienvenido "+login));
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
