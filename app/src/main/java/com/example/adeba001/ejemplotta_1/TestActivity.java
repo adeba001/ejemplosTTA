@@ -22,7 +22,7 @@ import android.widget.VideoView;
 import com.example.adeba001.ejemplotta_1.modelo.Test;
 import com.example.adeba001.ejemplotta_1.presentation.Data;
 
-public class TestActivity extends AppCompatActivity implements View.OnClickListener {
+public class TestActivity extends ModelActivity implements View.OnClickListener {
 
     private int correct=0;
     private Test.Advice advise;

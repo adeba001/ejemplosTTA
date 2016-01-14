@@ -15,7 +15,7 @@ import android.widget.Toast;
 import java.io.File;
 import java.io.IOException;
 
-public class ExerciseActivity extends AppCompatActivity {
+public class ExerciseActivity extends ModelActivity {
 
     public final static int READ_REQUEST_CODE=1;
     public final static int VIDEO_REQUEST_CODE=2;
@@ -115,6 +115,24 @@ public class ExerciseActivity extends AppCompatActivity {
     public void sendFile(View view)
     {
 
+    }
+    protected <T> void startModelActivity(Class<T> cls){
+        Intent intent= newIntent(cls);
+        startActivity(intent);
+    }
+
+    protected <T> void startModelActivityForResult(Class<T> cls,int requestCode)
+    {
+        Intent intent=newIntent(cls);
+        startActivityForResult(intent,requestCode);
+    }
+
+    protected <T> Intent newIntent(Class<T> cls){
+
+        Intent intent= new Intent(getApplicationContext(),cls);
+        intent.putExtras(data.getBundle());// metemos los datos de la actividad a si la nueva clase
+        //que se crea coge los datos de la actividad, propagamos los datos
+        return intent;
     }
 
 }

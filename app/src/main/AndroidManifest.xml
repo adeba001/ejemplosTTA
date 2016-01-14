@@ -41,10 +41,10 @@
             android:name=".ExerciseActivity"
             android:label="@string/title_activity_exercise"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
+       <!-- <activity
             android:name=".ModelActivity"
             android:label="@string/title_activity_model"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>-->
     </application>
 
 </manifest>

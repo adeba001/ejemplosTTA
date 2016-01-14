@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MenuActivity extends AppCompatActivity {
+public class MenuActivity extends ModelActivity {
     public final static String EXTRA_PREFF="es.tta.ejemplo_tta.preff";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,24 +25,6 @@ public class MenuActivity extends AppCompatActivity {
     }
 
 
-    public void test(View view){
 
-        Intent intent= new Intent(this, TestActivity.class);
-        startActivity(intent);
-
-    }
-
-    public void ejercicio (View view){
-
-        Intent intent= new Intent(this, ExerciseActivity.class);
-        startActivity(intent);
-
-    }
-
-    public void seguimiento(View view){
-
-        Toast toast = Toast.makeText(this, "No implementada la accion de seguimiento", Toast.LENGTH_SHORT);
-        toast.show();
-    }
 
 }
